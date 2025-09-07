@@ -1,10 +1,11 @@
 
 
+import React from 'react';
 import favicon from '../images/favicon.svg';
 import './Header.css';
 import { Link, NavLink } from 'react-router-dom';
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <div className="headerContainer">
         <div className="homeLogoContainer">
@@ -14,21 +15,28 @@ function Header() {
             </Link>
         </div>
         <div className="navItemContainer">
-            <NavLink
-                to="/cards"
-                className={({ isActive }) => isActive ? 'navItem navItem--active' : 'navItem'}
-            >
-                Cards
-            </NavLink>
-            <NavLink
-                to="/deck-builder"
-                className={({ isActive }) => isActive ? 'navItem navItem--active' : 'navItem'}
-            >
-                Deck Builder
-            </NavLink>
+            <NavItem url="/cards" content="Cards" />
+            <NavItem url="/deck-builder" content="Deck Builder" />
+            <NavItem url="/decks" content="Decks" />
         </div>
     </div>
   );
+}
+
+interface NavItemProps {
+    url: string;
+    content: string;
+}
+
+const NavItem: React.FC<NavItemProps> = ({ url, content }) => {
+    return (
+        <NavLink
+            to={url}
+            className={({ isActive }) => isActive ? 'navItem navItem--active' : 'navItem'}
+        >
+            {content}
+        </NavLink>
+    );
 }
 
 export default Header;

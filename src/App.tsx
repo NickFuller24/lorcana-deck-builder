@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Cards from './pages/Cards';
 import DeckBuilder from './pages/DeckBuilder';
+import Decks from './pages/Decks';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/deck-builder" element={<DeckBuilder />} />
+        <Route path="/decks" element={<Decks />} />
       </Routes>
     </Router>
   );
