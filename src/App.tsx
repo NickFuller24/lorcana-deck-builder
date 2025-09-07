@@ -11,13 +11,17 @@ import Decks from './pages/Decks';
 function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cards" element={<Cards />} />
-        <Route path="/deck-builder" element={<DeckBuilder />} />
-        <Route path="/decks" element={<Decks />} />
-      </Routes>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+        <Header />
+        <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cards" element={<Cards />} />
+            <Route path="/deck-builder" element={<DeckBuilder />} />
+            <Route path="/decks" element={<Decks />} />
+          </Routes>
+        </div>
+      </div>
     </Router>
   );
 }

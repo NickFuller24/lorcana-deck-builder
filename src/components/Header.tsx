@@ -15,9 +15,9 @@ const Header: React.FC = () => {
             </Link>
         </div>
         <div className="navItemContainer">
-            <NavItem url="/cards" content="Cards" />
             <NavItem url="/deck-builder" content="Deck Builder" />
             <NavItem url="/decks" content="Decks" />
+            <NavItem url="/cards" content="Cards" />
         </div>
     </div>
   );
