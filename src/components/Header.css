@@ -1,0 +1,45 @@
+.headerContainer {
+    display: flex;
+}
+
+.homeLogoContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.homeLogo, .homeLogo:hover, .homeLogo:focus, .homeLogo:active  {
+    font-size: large;
+    font-weight: bold;
+    color: #F3F4F6;
+    text-decoration: none;
+}
+
+.navItemContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.navItem {
+    font-size: medium;
+    font-weight: 200;
+    color: #F3F4F6;
+    text-decoration: none;
+    height: fit-content;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.navItem--active {
+    background-color: #4338CA;
+}
+
+.navItem:hover {
+    background-color: #6366F1;
+}

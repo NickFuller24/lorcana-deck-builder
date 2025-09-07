@@ -1,0 +1,11 @@
+<svg viewport="0 0 24 24" height="24" width="24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+    <radialGradient id="myGradient">
+        <stop offset="10%" stop-color="#fef3c7" />
+        <stop offset="60%" stop-color="#fde68a" />
+    </radialGradient>
+    </defs>
+    
+    <circle r="12" cx="12" cy="12" fill="#111827"/>
+    <path d="M 12 2 Q 12 12 2 12 Q 12 12 12 22 Q 12 12 22 12 Q 12 12 12 2" fill="url(#myGradient)" stroke="#c2b68e" stroke-width="0.5" />
+</svg>
