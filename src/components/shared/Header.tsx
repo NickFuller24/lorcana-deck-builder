@@ -1,7 +1,5 @@
-
-
 import React from 'react';
-import favicon from '../images/favicon.svg';
+import favicon from '../../images/favicon.svg';
 import './Header.css';
 import { Link, NavLink } from 'react-router-dom';
 

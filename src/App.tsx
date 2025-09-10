@@ -1,6 +1,6 @@
 
 import './App.css';
-import Header from './components/Header';
+import Header from './components/shared/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Cards from './pages/Cards';
